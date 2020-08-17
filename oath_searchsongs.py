@@ -3,8 +3,8 @@ import urllib.parse
 import pickle
 import numpy as np
 
-model = pickle.load(open('F:\Classify Song Genres from Audio Data\SVM_model','rb'))
-transformer = pickle.load(open('F:\Classify Song Genres from Audio Data\Standardscaler','rb'))
+model = pickle.load(open('.\SVM_model','rb'))
+transformer = pickle.load(open('.\Standardscaler','rb'))
 
 class SpotifyClient():
     def __init__(self,oath_token):
